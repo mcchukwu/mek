@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Wrench, User, Menu } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '../ui/Button';
 
 export function Header() {
@@ -12,7 +12,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <Wrench className="h-8 w-8 text-orange-600" />
+            {/* <Wrench className="h-8 w-8 text-orange-600" /> */}
             <span className="text-xl font-bold text-gray-900">Mekonet</span>
           </Link>
 
@@ -26,7 +26,7 @@ export function Header() {
               size="sm"
               onClick={() => navigate('/signin')}
             >
-              <User className="h-4 w-4 mr-2" />
+              {/* <User className="h-4 w-4 mr-2" /> */}
               Sign In
             </Button>
             <Button 
